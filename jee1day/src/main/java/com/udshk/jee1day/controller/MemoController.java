@@ -2,6 +2,7 @@ package com.udshk.jee1day.controller;
 
 import java.util.List;
 
+import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.event.ActionEvent;
@@ -14,6 +15,7 @@ import com.udshk.jee1day.service.MemoServiceBean;
 public class MemoController {
 	private Memo memo;
 
+	@EJB
     private MemoServiceBean memoService;
 
     public MemoController() {
